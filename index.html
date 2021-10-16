@@ -47,8 +47,8 @@
                 articles: [
                     
                 ],
-                urlOnBlank:'https://newsapi.org/v2/top-headlines?country=in&apiKey=50c0957a733e4c4ca4fdcfb351f465b9',
-                url: "https://newsapi.org/v2/everything?apiKey=50c0957a733e4c4ca4fdcfb351f465b9",
+                urlOnBlank:'https://newsapi.org/v2/top-headlines?country=in&apiKey=put your api key here,
+                url: "https://newsapi.org/v2/everything?apiKey=put your api key here",
                 getArticles: async function(){
                         await fetch(this.url + `&q=${this.query}`)
                         .then(response => response.json())
